@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Recreational Mathematics</title>
+    <meta name="Jill" content="Exploring Math" />
+
+    <link rel="stylesheet" href="dist/css/main.css" />
+  </head>
+
+  <body>
+    <div id="forAttractor">
+      <form id="controls" action="javascript:void(0);">
+        <fieldset id="ranges">
+          <p>
+            <lable
+              >Particle Size: <span></span
+              ><input
+                class="ranges"
+                id="slider_pS"
+                min="0.01"
+                max="1"
+                step="0.01"
+                value="0.3"
+                type="range"
+            /></lable>
+          </p>
+          <p>
+            <label
+              ><var>a</var>:<span></span
+              ><input
+                class="ranges"
+                id="slider_a"
+                type="range"
+                min="-2"
+                max="2"
+                step="0.1"
+                value="-1.4"
+            /></label>
+          </p>
+          <p>
+            <label>
+              <var>b</var>:<span></span
+              ><input
+                class="ranges"
+                id="slider_b"
+                type="range"
+                min="-2"
+                max="2"
+                step="0.1"
+                value="1.6"
+            /></label>
+          </p>
+          <p>
+            <label>
+              <var>c</var>:<span></span
+              ><input
+                class="ranges"
+                id="slider_c"
+                type="range"
+                min="-2"
+                max="2"
+                step="0.1"
+                value="1.0"
+            /></label>
+          </p>
+          <p>
+            <label>
+              <var>d</var>:<span></span
+              ><input
+                class="ranges"
+                id="slider_d"
+                type="range"
+                min="-2"
+                max="2"
+                step="0.1"
+                value="0.7"
+            /></label>
+          </p>
+        </fieldset>
+        <fieldset id="examples">
+          <button id="example1">example1</button>
+          <button id="example2">example2</button>
+          <button id="example3">example3</button>
+          <button id="example4">example4</button>
+          <button id="example5">example5</button>
+        </fieldset>
+        <fieldset id="options">
+          <label>
+            <input type="checkbox" id="globalAlpha" name="globalAlpha" />
+            Global Alpha
+          </label>
+
+          <label id="color">
+            Color:
+            <input type="color" value="#FFAA00" id="particleColor" />
+          </label>
+
+          <button id="redraw">redraw</button>
+        </fieldset>
+      </form>
+    </div>
+    <div id="changingOptions"></div>
+
+    <div id="titles">
+      <!-- <h1>Recreational Mathematics</h1> -->
+      <h1>Playing with Chaotic Math</h1>
+
+      <h2>Explore</h2>
+      <div id="buttons">
+        <button id="random" class="selection">Simple Fractals</button>
+        <button id="graphs" class="selection">Graph Generator</button>
+        <button id="attractor" class="selection">Strange Attractors</button>
+      </div>
+    </div>
+
+    <div id="canvas"></div>
+
+    <script src="dist/js/scripts.js"></script>
+  </body>
+</html>
