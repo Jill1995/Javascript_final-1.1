@@ -1,0 +1,90 @@
+fieldset {
+  float: right;
+  // width: 32%;
+  // display: inline-block;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+form {
+  align-content: left;
+  width: 100%;
+  position: relative;
+}
+
+body {
+  background-color: #ffffff;
+}
+h1 {
+  text-align: center;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  font-weight: 50;
+}
+h2 {
+  color: white;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: 50;
+}
+
+#titles {
+  background-image: url("source.gif");
+  // background-repeat: no-repeat;
+  background-size: 100%, 100%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 70%;
+  height: 70%;
+}
+
+#buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#random {
+  color: white;
+}
+#graphs {
+  color: white;
+}
+#attractor {
+  color: white;
+}
+
+button {
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgba(255, 255, 255, 0);
+  border-color: white;
+  border-width: thin;
+  font-size: 16px;
+}
+
+#button1 {
+  border-radius: 0px;
+  width: 80px;
+  padding: 0px;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+canvas {
+  z-index: 2;
+}
+
+#controls {
+  display: none;
+}
